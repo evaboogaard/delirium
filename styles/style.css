@@ -100,6 +100,12 @@ main {
   padding: 1rem;
 }
 
+#intro section p {
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
 #poster {
   background-color: black;
   -webkit-box-shadow: 0 0 2rem -0.5rem rgba(0, 0, 0, 0.9);
@@ -220,5 +226,12 @@ main {
   100% {
     text-indent: -5.25rem;
   }
+}
+
+.word {
+  margin: auto;
+  color: black;
+  font: normal 2.5em 'Delirium';
+  text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
 }
 /*# sourceMappingURL=style.css.map */
