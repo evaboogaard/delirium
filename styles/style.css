@@ -1,0 +1,224 @@
+@font-face {
+  font-family: 'delirium';
+  font-weight: normal;
+  src: url("../../assets/delirium.ttf");
+}
+
+@font-face {
+  font-family: 'delirium';
+  font-weight: bold;
+  src: url("../../assets/delirium_bold.ttf");
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+li {
+  font-family: 'delirium';
+  color: black;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.sr-only {
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+  width: 100%;
+}
+
+.cursor-dot,
+.cursor-dot-outline {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.cursor-dot {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.cursor-dot-outline {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 2rem;
+  height: 2rem;
+}
+
+#intro section {
+  padding: 1rem;
+}
+
+#poster {
+  background-color: black;
+  -webkit-box-shadow: 0 0 2rem -0.5rem rgba(0, 0, 0, 0.9);
+          box-shadow: 0 0 2rem -0.5rem rgba(0, 0, 0, 0.9);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -ms-grid;
+  display: grid;
+  font-family: 'Delirium', sans-serif;
+  font-weight: 800;
+  font-size: 3.15rem;
+  -ms-grid-columns: 5.25rem 18rem;
+      grid-template-columns: 5.25rem 18rem;
+  height: 45rem;
+  line-height: 0.8;
+  margin: 3rem auto;
+  padding: 6rem 6rem 14rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  width: 33rem;
+}
+
+#poster .left {
+  -webkit-animation: slideleft 3s linear;
+          animation: slideleft 3s linear;
+  color: white;
+  overflow: hidden;
+  -webkit-transform: skewY(-30deg);
+          transform: skewY(-30deg);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+#poster .right {
+  -webkit-animation: slideright 3s linear;
+          animation: slideright 3s linear;
+  color: darkgray;
+  overflow: hidden;
+  text-indent: -5.25rem;
+  -webkit-transform: skewY(30deg);
+          transform: skewY(30deg);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+#poster .last {
+  color: gray;
+  font-size: 1.6rem;
+  line-height: 0.9;
+  overflow: hidden;
+  text-indent: 0;
+  -webkit-transform: skewY(30deg) skewX(-41deg);
+          transform: skewY(30deg) skewX(-41deg);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+#poster .last > div {
+  -webkit-animation: slidebottom 3s linear;
+          animation: slidebottom 3s linear;
+}
+
+@-webkit-keyframes slideleft {
+  0% {
+    text-indent: -23.25rem;
+  }
+  100% {
+    text-indent: 0;
+  }
+}
+
+@keyframes slideleft {
+  0% {
+    text-indent: -23.25rem;
+  }
+  100% {
+    text-indent: 0;
+  }
+}
+
+@-webkit-keyframes slidebottom {
+  0% {
+    text-indent: -18rem;
+  }
+  25% {
+    text-indent: -18rem;
+  }
+  100% {
+    text-indent: 0;
+  }
+}
+
+@keyframes slidebottom {
+  0% {
+    text-indent: -18rem;
+  }
+  25% {
+    text-indent: -18rem;
+  }
+  100% {
+    text-indent: 0;
+  }
+}
+
+@-webkit-keyframes slideright {
+  0% {
+    text-indent: -28.5rem;
+  }
+  100% {
+    text-indent: -5.25rem;
+  }
+}
+
+@keyframes slideright {
+  0% {
+    text-indent: -28.5rem;
+  }
+  100% {
+    text-indent: -5.25rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,78 @@
+// Source: https://codepen.io/ankit567/pen/WWweRV
+
+#poster {
+  background-color: $black;
+  box-shadow: 0 0 2rem -0.5rem rgba(0, 0, 0, 0.9);
+  box-sizing: border-box;
+  display: grid;
+  font-family: 'Delirium', sans-serif;
+  font-weight: 800;
+  font-size: 3.15rem;
+  grid-template-columns: 5.25rem 18rem;
+  height: 45rem;
+  line-height: 0.8;
+  margin: 3rem auto;
+  padding: 6rem 6rem 14rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  width: 33rem;
+
+  .left {
+    animation: slideleft 3s linear;
+    color: white;
+    overflow: hidden;
+    transform: skewY(-30deg);
+    transform-origin: top right;
+  }
+  .right {
+    animation: slideright 3s linear;
+    color: darkgray;
+    overflow: hidden;
+    text-indent: -5.25rem;
+    transform: skewY(30deg);
+    transform-origin: top left;
+  }
+
+  .last {
+    color: gray;
+    font-size: 1.6rem;
+    line-height: 0.9;
+    overflow: hidden;
+    text-indent: 0;
+    transform: skewY(30deg) skewX(-41deg);
+    transform-origin: top left;
+  }
+  .last > div {
+    animation: slidebottom 3s linear;
+  }
+}
+
+@keyframes slideleft {
+  0% {
+    text-indent: -23.25rem;
+  }
+  100% {
+    text-indent: 0;
+  }
+}
+
+@keyframes slidebottom {
+  0% {
+    text-indent: -18rem;
+  }
+  25% {
+    text-indent: -18rem;
+  }
+  100% {
+    text-indent: 0;
+  }
+}
+
+@keyframes slideright {
+  0% {
+    text-indent: -28.5rem;
+  }
+  100% {
+    text-indent: -5.25rem;
+  }
+}
