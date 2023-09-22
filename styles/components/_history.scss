@@ -1,0 +1,38 @@
+.history {
+  width: 80%;
+
+  .input {
+    &-middeleeuwen {
+      font-family: 'middeleeuws';
+    }
+
+    &-renaissance {
+      font-family: 'renaissance';
+    }
+
+    &-barok {
+      font-family: 'baroque';
+    }
+
+    &-sier {
+      font-family: 'victorian';
+    }
+
+    &-artnouveau {
+      font-family: 'art-nouveau';
+    }
+  }
+
+  input {
+    font-size: 3rem;
+    margin: 2rem auto;
+    border: none;
+    box-shadow: 0 1.5px 0 black;
+    max-width: 100%;
+    max-height: 4rem;
+
+    &:focus {
+      outline: 2px dotted $black;
+    }
+  }
+}
