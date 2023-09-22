@@ -43,6 +43,7 @@ $black: black;
 $white: white;
 
 $pink: #e54b6b;
+$light-pink: #e54b6a79;
 $blue: #5f91ce;
 
 // VARIABLES
@@ -56,4 +57,21 @@ a,
 li {
   font-family: 'delirium';
   color: $black;
+}
+
+// FONT-SIZE
+
+h2 {
+  font-size: 3rem;
+}
+
+p,
+li {
+  font-size: 1.75rem;
+}
+
+// SELECT
+
+::selection {
+  background-color: rgba($pink, 0.3);
 }

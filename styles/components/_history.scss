@@ -1,6 +1,14 @@
 .history {
   width: 80%;
 
+  h2 {
+    margin-top: 3rem;
+  }
+
+  p {
+    margin: 2rem auto;
+  }
+
   .input {
     &-middeleeuwen {
       font-family: 'middeleeuws';

@@ -46,6 +46,23 @@ li {
   color: black;
 }
 
+h2 {
+  font-size: 3rem;
+}
+
+p,
+li {
+  font-size: 1.75rem;
+}
+
+::-moz-selection {
+  background-color: rgba(229, 75, 107, 0.3);
+}
+
+::selection {
+  background-color: rgba(229, 75, 107, 0.3);
+}
+
 *,
 *::after,
 *::before {
@@ -110,13 +127,13 @@ main {
 }
 
 .cursor-dot {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(229, 75, 107, 0.7);
   width: 0.5rem;
   height: 0.5rem;
 }
 
 .cursor-dot-outline {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(95, 145, 206, 0.3);
   width: 2rem;
   height: 2rem;
 }
@@ -133,6 +150,14 @@ main {
 
 .history {
   width: 80%;
+}
+
+.history h2 {
+  margin-top: 3rem;
+}
+
+.history p {
+  margin: 2rem auto;
 }
 
 .history .input-middeleeuwen {
