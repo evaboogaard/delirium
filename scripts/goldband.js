@@ -1,11 +1,11 @@
 // Inspo: https://alvarotrigo.com/blog/css-text-animations/
 
 var words = [
-  'De zuster die komt dichterbij',
-  'Dit moet een delirium zijn',
-  'Want die zuster, dat ben jij',
-  'Dit is een noodgeval',
-  'Waar blijft die fucking ambulance?',
+  'AaBbCcDdEeFfGgHhIiJjKkLl',
+  'Welkom bij Delirium,',
+  'een acute verwardheid',
+  'en een veranderd bewustzijn',
+  'MmNnOoPpQqRrSsTtUuVvWwXxYyZz,',
 ];
 var part;
 var i = 0;
