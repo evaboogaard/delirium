@@ -1,9 +1,38 @@
 #intro {
+  .overflow-hidden {
+    overflow: hidden;
+    max-width: 100vw;
+  }
+
+  .beer-row {
+    display: flex;
+    gap: 5rem;
+    animation: autoplay 45s linear infinite;
+  }
+
+  img {
+    height: 20rem;
+  }
+
+  @keyframes autoplay {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  /* Apply the autoplay animation */
+  .carousel-container.play ul.beer-row {
+    animation: autoplay 10s linear infinite;
+  }
+
   section {
     padding: 1rem;
 
     p {
-      font-size: 3rem;
+      font-size: 1.5rem;
       font-weight: bold;
       padding: 0.5rem;
     }
