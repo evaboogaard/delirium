@@ -10,7 +10,6 @@
 }
 
 #rotatingText {
-  animation: rotate-circle 20s linear infinite;
   position: absolute;
   scale: 3;
   z-index: -1;
@@ -19,5 +18,31 @@
 @keyframes rotate-circle {
   to {
     transform: rotate(1turn);
+  }
+}
+
+.links {
+  #rotatingText {
+    animation: rotate-circle 20s linear infinite;
+    left: 0;
+
+    @media (min-width: $md) {
+      position: fixed;
+      top: 10rem;
+      z-index: 50;
+      left: -1rem;
+    }
+  }
+}
+
+.rechts {
+  #rotatingText {
+    animation: rotate-circle 20s linear infinite reverse;
+    @media (min-width: $md) {
+      position: fixed;
+      bottom: 10rem;
+      z-index: 50;
+      left: -1rem;
+    }
   }
 }

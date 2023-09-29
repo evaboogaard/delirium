@@ -91,6 +91,36 @@ ul {
   opacity: 1;
 }
 
+@-webkit-keyframes border-breathing {
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  50% {
+    -webkit-transform: scaleY(2);
+            transform: scaleY(2);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@keyframes border-breathing {
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  50% {
+    -webkit-transform: scaleY(2);
+            transform: scaleY(2);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
 *,
 *::after,
 *::before {
@@ -163,6 +193,14 @@ main {
   width: 100%;
 }
 
+.spacing-1 {
+  margin: 5rem 0;
+}
+
+.spacing-2 {
+  margin: 10rem 0;
+}
+
 .cursor-dot,
 .cursor-dot-outline {
   position: absolute;
@@ -218,18 +256,9 @@ main {
           animation: border-breathing 3.5s linear infinite;
 }
 
-@-webkit-keyframes border-breathing {
-  0% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-  }
-  50% {
-    -webkit-transform: scaleY(2);
-            transform: scaleY(2);
-  }
-  100% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
+@media (min-width: 768px) {
+  #intro .word::before {
+    display: none;
   }
 }
 
@@ -494,8 +523,6 @@ header {
 }
 
 #rotatingText {
-  -webkit-animation: rotate-circle 20s linear infinite;
-          animation: rotate-circle 20s linear infinite;
   position: absolute;
   scale: 3;
   z-index: -1;
@@ -515,8 +542,40 @@ header {
   }
 }
 
+.links #rotatingText {
+  -webkit-animation: rotate-circle 20s linear infinite;
+          animation: rotate-circle 20s linear infinite;
+  left: 0;
+}
+
+@media (min-width: 768px) {
+  .links #rotatingText {
+    position: fixed;
+    top: 10rem;
+    z-index: 50;
+    left: -1rem;
+  }
+}
+
+.rechts #rotatingText {
+  animation: rotate-circle 20s linear infinite reverse;
+}
+
+@media (min-width: 768px) {
+  .rechts #rotatingText {
+    position: fixed;
+    bottom: 10rem;
+    z-index: 50;
+    left: -1rem;
+  }
+}
+
 #voorbeelden {
   width: 80%;
+}
+
+#voorbeelden h2 {
+  margin-bottom: 2rem;
 }
 
 #voorbeelden ul {

@@ -113,3 +113,19 @@ ul {
 .shown {
   opacity: 1;
 }
+
+// ANIMATIONS
+
+@keyframes border-breathing {
+  0% {
+    transform: scaleY(1);
+  }
+
+  50% {
+    transform: scaleY(2);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
