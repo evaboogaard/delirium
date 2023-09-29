@@ -59,8 +59,21 @@ main {
 
 .spacing-1 {
   margin: 5rem 0;
+
+  @media (min-width: $md) {
+    margin: 0;
+  }
 }
 
 .spacing-2 {
   margin: 10rem 0;
+
+  @media (min-width: $md) {
+    margin: 0;
+  }
+}
+
+.trip-button {
+  width: 4rem;
+  height: 4rem;
 }

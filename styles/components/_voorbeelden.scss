@@ -23,10 +23,6 @@
         p {
           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
-        @media (min-width: $md) {
-          position: absolute;
-          opacity: 0;
-        }
       }
     }
   }

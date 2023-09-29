@@ -18,23 +18,9 @@
       left: 0;
       position: absolute;
       top: 16rem;
-      animation: border-breathing 3.5s linear infinite;
+      animation: breathing 3.5s linear infinite;
       @media (min-width: $md) {
         display: none;
-      }
-    }
-
-    @keyframes border-breathing {
-      0% {
-        transform: scaleY(1);
-      }
-
-      50% {
-        transform: scaleY(2);
-      }
-
-      100% {
-        transform: scaleY(1);
       }
     }
 
