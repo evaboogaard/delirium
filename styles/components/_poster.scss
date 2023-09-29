@@ -1,8 +1,12 @@
 // Source: https://codepen.io/ankit567/pen/WWweRV
+header {
+  z-index: 100;
+  background-color: $dark-blue;
+  position: relative;
+}
 
 #poster {
-  background-color: $black;
-  box-shadow: 0 0 2rem -0.5rem rgba(0, 0, 0, 0.9);
+  background-color: $dark-blue;
   box-sizing: border-box;
   display: grid;
   font-family: 'Delirium', sans-serif;
@@ -19,14 +23,15 @@
 
   .left {
     animation: slideleft 3s linear;
-    color: white;
+    color: $pink;
     overflow: hidden;
     transform: skewY(-30deg);
     transform-origin: top right;
   }
   .right {
     animation: slideright 3s linear;
-    color: darkgray;
+    color: $pink;
+    filter: brightness(80%);
     overflow: hidden;
     text-indent: -5.25rem;
     transform: skewY(30deg);
@@ -34,7 +39,7 @@
   }
 
   .last {
-    color: gray;
+    color: $white;
     font-size: 1.6rem;
     line-height: 0.9;
     overflow: hidden;

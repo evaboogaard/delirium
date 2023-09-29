@@ -37,6 +37,12 @@
   src: url('../assets/renaissance.ttf');
 }
 
+// BREAKPOINTS
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
 // COLOR VARIABLES
 
 $black: black;
@@ -45,6 +51,7 @@ $white: white;
 $pink: #e54b6b;
 $light-pink: #e54b6a79;
 $blue: #5f91ce;
+$dark-blue: #254f84;
 
 // VARIABLES
 
@@ -80,6 +87,29 @@ li {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.delirium-font {
+  font-family: 'delirium';
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 ul {
   list-style: none;
+}
+
+.list-normal-font {
+  li {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+}
+
+// INTERSECTION OBSERVER
+
+.observe {
+  opacity: 0;
+  transition: 0.5s bounce;
+}
+
+.shown {
+  opacity: 1;
 }

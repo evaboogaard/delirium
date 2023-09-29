@@ -67,8 +67,28 @@ li {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.delirium-font {
+  font-family: 'delirium';
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 ul {
   list-style: none;
+}
+
+.list-normal-font li {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.observe {
+  opacity: 0;
+  -webkit-transition: 0.5s bounce;
+  transition: 0.5s bounce;
+}
+
+.shown {
+  opacity: 1;
 }
 
 *,
@@ -81,6 +101,10 @@ ul {
 * {
   margin: 0;
   padding: 0;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 .sr-only {
@@ -105,6 +129,23 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  main {
+    margin-left: 20rem;
+    border-left: 10rem solid #e54b6b;
+  }
+  main::before {
+    content: '';
+    position: fixed;
+    background-color: #5f91ce;
+    height: 100%;
+    width: 14rem;
+    left: 0;
+    top: 0;
+  }
 }
 
 .bg {
@@ -114,7 +155,7 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: black;
+  background-color: #254f84;
   width: 100%;
 }
 
@@ -151,6 +192,8 @@ main {
 }
 
 #intro {
+  z-index: 100;
+  position: relative;
   /* Apply the autoplay animation */
 }
 
@@ -160,6 +203,49 @@ main {
   font-size: 4rem;
   width: 100vw;
   height: 4rem;
+  padding-bottom: 15rem;
+}
+
+#intro .word::before {
+  content: '';
+  background-color: #e54b6b;
+  width: 100%;
+  height: 2rem;
+  left: 0;
+  position: absolute;
+  top: 16rem;
+  -webkit-animation: border-breathing 3.5s linear infinite;
+          animation: border-breathing 3.5s linear infinite;
+}
+
+@-webkit-keyframes border-breathing {
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  50% {
+    -webkit-transform: scaleY(2);
+            transform: scaleY(2);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@keyframes border-breathing {
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  50% {
+    -webkit-transform: scaleY(2);
+            transform: scaleY(2);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
 }
 
 #intro .overflow-hidden {
@@ -174,6 +260,7 @@ main {
   gap: 5rem;
   -webkit-animation: autoplay 45s linear infinite;
           animation: autoplay 45s linear infinite;
+  margin: 6rem 0;
 }
 
 #intro img {
@@ -262,10 +349,19 @@ main {
   outline: 2px dotted black;
 }
 
+#kenmerken {
+  width: 80%;
+  margin: 5rem 0;
+}
+
+header {
+  z-index: 100;
+  background-color: #254f84;
+  position: relative;
+}
+
 #poster {
-  background-color: black;
-  -webkit-box-shadow: 0 0 2rem -0.5rem rgba(0, 0, 0, 0.9);
-          box-shadow: 0 0 2rem -0.5rem rgba(0, 0, 0, 0.9);
+  background-color: #254f84;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -ms-grid;
@@ -287,7 +383,7 @@ main {
 #poster .left {
   -webkit-animation: slideleft 3s linear;
           animation: slideleft 3s linear;
-  color: white;
+  color: #e54b6b;
   overflow: hidden;
   -webkit-transform: skewY(-30deg);
           transform: skewY(-30deg);
@@ -298,7 +394,9 @@ main {
 #poster .right {
   -webkit-animation: slideright 3s linear;
           animation: slideright 3s linear;
-  color: darkgray;
+  color: #e54b6b;
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
   overflow: hidden;
   text-indent: -5.25rem;
   -webkit-transform: skewY(30deg);
@@ -308,7 +406,7 @@ main {
 }
 
 #poster .last {
-  color: gray;
+  color: white;
   font-size: 1.6rem;
   line-height: 0.9;
   overflow: hidden;
@@ -381,6 +479,72 @@ main {
   }
   100% {
     text-indent: -5.25rem;
+  }
+}
+
+.text {
+  font-weight: 600;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+  font-family: 'delirium';
+  font-size: 1.1rem;
+  fill: #e54b6b;
+  text-shadow: 2px 0px #5f91ce;
+  opacity: 0.7;
+}
+
+#rotatingText {
+  -webkit-animation: rotate-circle 20s linear infinite;
+          animation: rotate-circle 20s linear infinite;
+  position: absolute;
+  scale: 3;
+  z-index: -1;
+}
+
+@-webkit-keyframes rotate-circle {
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+@keyframes rotate-circle {
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+#voorbeelden {
+  width: 80%;
+}
+
+#voorbeelden ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+#voorbeelden ul li {
+  position: relative;
+  margin-right: 5rem;
+}
+
+#voorbeelden ul li img {
+  width: auto;
+  height: 30rem;
+}
+
+#voorbeelden ul li section p {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@media (min-width: 768px) {
+  #voorbeelden ul li section {
+    position: absolute;
+    opacity: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

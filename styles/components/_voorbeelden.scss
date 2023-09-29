@@ -1,0 +1,29 @@
+#voorbeelden {
+  width: 80%;
+
+  ul {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    li {
+      position: relative;
+      margin-right: 5rem;
+
+      img {
+        width: auto;
+        height: 30rem;
+      }
+
+      section {
+        p {
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        @media (min-width: $md) {
+          position: absolute;
+          opacity: 0;
+        }
+      }
+    }
+  }
+}

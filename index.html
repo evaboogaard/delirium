@@ -10,12 +10,6 @@
   </head>
   <body>
     <header>
-      <nav></nav>
-    </header>
-
-    <main>
-      <h1 class="sr-only">DELIRIUM</h1>
-
       <section class="bg">
         <section id="poster">
           <div class="left">Kunst</div>
@@ -41,6 +35,10 @@
           </div>
         </section>
       </section>
+    </header>
+
+    <main>
+      <h1 class="sr-only">Delirium typografie publicatie</h1>
 
       <section id="intro">
         <section>
@@ -94,40 +92,62 @@
           </ul>
         </div>
 
-        <section>
+        <section class="observe">
           <p>In de wereld van typografie, vol met harmonie,</p>
           <p>Zien we Delirium, een bier vol magie.</p>
         </section>
 
-        <section>
+        <section class="observe">
           <p>Uniek in haar krullende pracht,</p>
           <p>Een biertje dat in het oog springt, dag en nacht.</p>
         </section>
 
-        <section>
+        <section class="observe">
           <p>De letters dansen, sierlijk en fijn,</p>
           <p>Delirium schittert met krul en lijn.</p>
         </section>
+
+        <section>
+          <svg id="rotatingText" viewBox="0 0 200 200" width="200" height="200">
+            <defs>
+              <path
+                id="circle"
+                d="M 100, 100
+                      m -75, 0
+                      a 75, 75 0 1, 0 150, 0
+                      a 75, 75 0 1, 0 -150, 0
+                      "
+              ></path>
+            </defs>
+            <text width="400">
+              <textPath
+                alignment-baseline="top"
+                xlink:href="#circle"
+                class="text"
+              >
+                DELIRIUM TREMENS - DELIRIUM TREMENS -
+              </textPath>
+            </text>
+          </svg>
+        </section>
       </section>
 
-      <section class="history">
+      <section class="history observe">
         <h2>Geschiedenis</h2>
-        <p class="normal-font">
-          Het specifieke lettertype dat wordt gebruikt voor "Delirium" bier,
-          bekend als "Huygens" of "Delirium Sans," heeft geen bekende directe
-          voorlopers buiten de context van het biermerk zelf. Het is een
-          aangepast lettertype dat speciaal is ontworpen voor de merkidentiteit
-          van "Delirium."
+        <p class="normal-font observe">
+          Het specifieke lettertype dat wordt gebruikt voor "Delirium" bier is
+          een aangepast lettertype dat speciaal is ontworpen voor de
+          merkidentiteit van "Delirium."
         </p>
 
-        <p class="normal-font">
-          Echter, om een bredere context te bieden over de ontwikkeling van
-          sierlijke en versierde lettertypen in de typografische geschiedenis,
-          kunnen we naar de algemene evolutie van lettertypen kijken:
+        <p class="normal-font observe">
+          Om een bredere context te bieden over de ontwikkeling van sierlijke en
+          versierde lettertypen in de typografische geschiedenis, kunnen we naar
+          de algemene evolutie van lettertypen kijken:
         </p>
 
         <ol>
-          <li>
+          <li class="observe">
             <h3>Middeleeuwse handschriften:</h3>
             <p class="normal-font">
               In de middeleeuwen waren de meeste teksten met de hand geschreven,
@@ -135,24 +155,20 @@
               omvatte verluchte initialen en gotische scripttypen.
             </p>
 
-            <input type="text" class="input-middeleeuwen" />
-          </li>
-          <li>
-            <section>
-              <h3>Renaissance en Humanistische lettertypen (15e-16e eeuw):</h3>
-              <p class="normal-font">
-                Tijdens de Renaissanceperiode ontwikkelden humanistische
-                geleerden nieuwe lettertypen die waren gebaseerd op klassieke
-                Romeinse inscripties. Deze lettertypen, zoals het lettertype van
-                Nicolas Jenson, kenmerkten zich door hun evenwichtige, sierlijke
-                vormen en vormden een breuk met de meer gotische stijlen van de
-                middeleeuwen.
-              </p>
-            </section>
+            <input
+              type="text"
+              class="input-middeleeuwen"
+              placeholder="Typ Hier"
+            />
 
-            <input type="text" class="input-renaissance" />
+            <p class="normal-font">
+              Bij bijvoorbeeld de letter
+              <span class="delirium-font">M</span> van het Delirium font kun je
+              zien dat er inspiratie vanuit deze lettertypen zijn opgedaan. Het
+              sierlijke en versierde is terug te vinden in Delirium.
+            </p>
           </li>
-          <li>
+          <li class="observe">
             <section>
               <h3>Barok- en Rococo-lettertypen (17e-18e eeuw):</h3>
               <p class="normal-font">
@@ -163,9 +179,17 @@
               </p>
             </section>
 
-            <input type="text" class="input-barok" />
+            <input type="text" class="input-barok" placeholder="Typ Hier" />
+
+            <p class="normal-font">
+              Hoewel de krullen hier veel grootser zijn dan bij het Delirium
+              font, is het toch waarschijnlijk een grote inspiratiebron geweest.
+              Wat opvalt is dat eigenlijk alleen de hoofdletters erg extravagant
+              zijn, terwijl bij Delirium elke letter net zo nadrukkelijk
+              aanwezig is als de ander.
+            </p>
           </li>
-          <li>
+          <li class="observe">
             <section>
               <h3>19e-eeuwse sierlettertypen:</h3>
               <p class="normal-font">
@@ -175,10 +199,18 @@
               </p>
             </section>
 
-            <input type="text" class="input-sier" />
+            <input type="text" class="input-sier" placeholder="Typ Hier" />
+            <p class="normal-font">
+              De krullende lijnen en versierde letters lijken erg op dat van
+              Delirium. Er is sprake van een groot contrast in de letters, qua
+              dunne en dikke lijnen. Zowel 19e-eeuwse sierlettertypen als het
+              Delirium-font kunnen creatieve en unieke lettervormen gebruiken
+              die zich onderscheiden van meer traditionele, eenvoudige
+              lettertypen.
+            </p>
           </li>
           <li>
-            <section>
+            <section class="observe">
               <h3>Art Nouveau (late 19e-20e eeuw):</h3>
               <p class="normal-font">
                 De Art Nouveau-beweging introduceerde organische, sierlijke
@@ -188,18 +220,190 @@
               </p>
             </section>
 
-            <input type="text" class="input-artnouveau" />
+            <input
+              type="text"
+              class="input-artnouveau"
+              placeholder="Typ Hier"
+            />
+            <p class="normal-font">
+              Zowel Art Nouveau-lettertypen als het Delirium-font kunnen
+              gebruikmaken van organische, gebogen, en vaak asymmetrische
+              vormen. Deze vormen kunnen lijken op bladeren, bloemen, wijnranken
+              en andere natuurlijke elementen. Ook maken Art Nouveau fonts en
+              het Delirium-font vaak gebruik van golvende lijnen en vloeiende
+              curves om een gevoel van beweging en elegantie in hun ontwerpen te
+              creëren.
+            </p>
           </li>
         </ol>
+
+        <h2>Stilistische kenmerken en ontwerpelementen van Delirium</h2>
         <p class="normal-font">
           Het lettertype van "Delirium" past in de bredere traditie van
-          sierlijke en decoratieve typografie, maar het is uniek omdat het
-          specifiek is ontworpen voor het merk en niet direct voortkomt uit een
-          van de historische lettertypen of stijlen die hierboven zijn genoemd.
+          sierlijke en decoratieve typografie, maar blijft uniek in zijn soort.
           Het is gemaakt om de merkidentiteit van "Delirium" te versterken en
           heeft daarom zijn eigen, herkenbare kenmerken die bijdragen aan de
           visuele aantrekkingskracht van het biermerk.
         </p>
+      </section>
+
+      <section id="kenmerken">
+        <h2>Kenmerken</h2>
+        <p class="normal-font">
+          Het Delirium-font is een modern, decoratief lettertype dat zich
+          onderscheidt door zijn eigen unieke kenmerken en ontwerpstijl. Hier
+          zijn enkele kenmerken waaraan het Delirium-font doorgaans voldoet:
+        </p>
+        <ol class="list-normal-font">
+          <li>
+            <span class="delirium-font"> Decoratieve krullen:</span> Het
+            Delirium-font bevat vaak sierlijke krullen en versieringen die de
+            letters verfraaien en een artistieke uitstraling geven.
+          </li>
+          <li>
+            <span class="delirium-font">Complexiteit:</span> Het lettertype is
+            vaak complex en gedetailleerd, met veel decoratieve elementen en
+            ornamenten.
+          </li>
+          <li>
+            <span class="delirium-font">Hoog contrast:</span> Het Delirium-font
+            vertoont doorgaans een hoog contrast tussen dikke en dunne lijnen in
+            de letters, wat zorgt voor een dramatisch effect.
+          </li>
+          <li>
+            <span class="delirium-font">Organische vormen:</span> Het kan
+            gebruikmaken van organische en gebogen vormen die lijken op
+            natuurlijke elementen zoals bladeren, bloemen of wijnranken.
+          </li>
+          <li>
+            <span class="delirium-font">Asymmetrie:</span> Het lettertype kan
+            asymmetrische elementen bevatten, waardoor het een kunstzinnig en
+            uniek uiterlijk krijgt.
+          </li>
+          <li>
+            <span class="delirium-font">Art Nouveau-invloeden:</span> Het
+            Delirium-font kan elementen van de Art Nouveau-stijl bevatten, zoals
+            gestileerde bloemen en organische vormen.
+          </li>
+          <li>
+            <span class="delirium-font">Creatieve lettervormen:</span> Het
+            lettertype kan creatieve en unieke lettervormen gebruiken, die zich
+            onderscheiden van meer traditionele lettertypen.
+          </li>
+          <li>
+            <span class="delirium-font">Ornamentatie:</span> Het is vaak rijk
+            aan ornamentatie en decoratieve details, waardoor het geschikt is
+            voor artistieke en decoratieve doeleinden.
+          </li>
+          <li>
+            <span class="delirium-font">Vloeiende lijnen:</span> Het
+            Delirium-font maakt vaak gebruik van golvende en vloeiende lijnen om
+            een gevoel van beweging en elegantie te creëren.
+          </li>
+          <li>
+            <span class="delirium-font">Eigentijdse interpretatie:</span> Het is
+            belangrijk op te merken dat het Delirium-font een eigentijdse
+            interpretatie is van decoratieve lettertypen en kan digitale
+            ontwerpelementen bevatten die niet aanwezig waren in historische
+            stijlen.
+          </li>
+        </ol>
+      </section>
+
+      <section id="voorbeelden">
+        <h2>Vergelijkbare lettertypen</h2>
+        <ul>
+          <li>
+            <img src="img/similar_1.png" alt="" />
+            <section>
+              <h3>font naam</h3>
+              <p>
+                waarom het similar is Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Eligendi distinctio fugiat dignissimos sed
+                quos nisi dolor molestiae eos obcaecati maiores!
+              </p>
+              <p>bronvermelding</p>
+            </section>
+          </li>
+
+          <li>
+            <img src="img/similar_2.png" alt="" />
+            <section>
+              <h3>font naam</h3>
+              <p>
+                waarom het similar is Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Eligendi distinctio fugiat dignissimos sed
+                quos nisi dolor molestiae eos obcaecati maiores!
+              </p>
+              <p>bronvermelding</p>
+            </section>
+          </li>
+
+          <li>
+            <img src="img/similar_3.png" alt="" />
+            <section>
+              <h3>font naam</h3>
+              <p>
+                waarom het similar is Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Eligendi distinctio fugiat dignissimos sed
+                quos nisi dolor molestiae eos obcaecati maiores!
+              </p>
+              <p>bronvermelding</p>
+            </section>
+          </li>
+
+          <li>
+            <img src="img/similar_4.png" alt="" />
+            <section>
+              <h3>font naam</h3>
+              <p>
+                waarom het similar is Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Eligendi distinctio fugiat dignissimos sed
+                quos nisi dolor molestiae eos obcaecati maiores!
+              </p>
+              <p>bronvermelding</p>
+            </section>
+          </li>
+
+          <li>
+            <img src="img/similar_5.jpeg" alt="" />
+            <section>
+              <h3>font naam</h3>
+              <p>
+                waarom het similar is Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Eligendi distinctio fugiat dignissimos sed
+                quos nisi dolor molestiae eos obcaecati maiores!
+              </p>
+              <p>bronvermelding</p>
+            </section>
+          </li>
+
+          <li>
+            <img src="img/similar_6.jpeg" alt="" />
+            <section>
+              <h3>font naam</h3>
+              <p>
+                waarom het similar is Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Eligendi distinctio fugiat dignissimos sed
+                quos nisi dolor molestiae eos obcaecati maiores!
+              </p>
+              <p>bronvermelding</p>
+            </section>
+          </li>
+
+          <li>
+            <img src="img/similar_7.jpeg" alt="" />
+            <section>
+              <h3>font naam</h3>
+              <p>
+                waarom het similar is Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Eligendi distinctio fugiat dignissimos sed
+                quos nisi dolor molestiae eos obcaecati maiores!
+              </p>
+              <p>bronvermelding</p>
+            </section>
+          </li>
+        </ul>
       </section>
 
       <div class="cursor-dot-outline"></div>
