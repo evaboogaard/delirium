@@ -37,6 +37,7 @@
     border: none;
     box-shadow: 0 1.5px 0 black;
     max-width: 100%;
+    background-color: transparent;
 
     &:focus {
       outline: 2px dotted $black;

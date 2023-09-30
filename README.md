@@ -2,10 +2,6 @@
 
 Welkom bij deze webapplicatie over de typografie van het biermerk Delirium. Het doel is om een visueel prikkelende uiteenzetting van het font en de geschiedenis hiervan te geven.
 
-## Proces
-
-## Bronnen
-
 ## Auteurs
 
 Dit project is ontworpen door Eva Boogaard voor de minor Visual Interface Design bij het vak Typografie.

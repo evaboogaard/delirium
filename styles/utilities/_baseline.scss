@@ -66,6 +66,18 @@ li {
   color: $black;
 }
 
+.trip {
+  body {
+    animation: bg-color 6s infinite ease-in-out;
+  }
+}
+
+.trip {
+  p {
+    animation: pink-blue 5s infinite linear;
+  }
+}
+
 // h2 {
 //   position: sticky;
 //   top: 0;
@@ -148,7 +160,7 @@ ul {
   }
 
   50% {
-    transform: scale(2);
+    transform: scale(1.2);
     transform-origin: center left;
   }
 
@@ -161,6 +173,34 @@ ul {
 @keyframes turn {
   to {
     transform: rotate(1turn);
+  }
+}
+
+@keyframes pink-blue {
+  0% {
+    color: $pink;
+  }
+
+  50% {
+    color: $blue;
+  }
+
+  100% {
+    color: $pink;
+  }
+}
+
+@keyframes bg-color {
+  0% {
+    background-color: rgba($pink, 0.3);
+  }
+
+  50% {
+    background-color: rgba($blue, 0.3);
+  }
+
+  100% {
+    background-color: rgba($pink, 0.3);
   }
 }
 

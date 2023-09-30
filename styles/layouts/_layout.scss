@@ -74,6 +74,25 @@ main {
 }
 
 .trip-button {
-  width: 4rem;
-  height: 4rem;
+  $size: 8rem;
+
+  width: $size;
+  height: $size;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+
+  img {
+    width: $size;
+    height: $size;
+    transition: 0.5s ease-out;
+
+    &:hover {
+      transform: scale(1.5);
+    }
+
+    &:active {
+      outline: 2px dotted $blue;
+    }
+  }
 }

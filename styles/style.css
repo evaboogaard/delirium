@@ -46,6 +46,16 @@ li {
   color: black;
 }
 
+.trip body {
+  -webkit-animation: bg-color 6s infinite ease-in-out;
+          animation: bg-color 6s infinite ease-in-out;
+}
+
+.trip p {
+  -webkit-animation: pink-blue 5s infinite linear;
+          animation: pink-blue 5s infinite linear;
+}
+
 h2 {
   font-size: 3rem;
 }
@@ -134,8 +144,8 @@ ul {
             transform-origin: center left;
   }
   50% {
-    -webkit-transform: scale(2);
-            transform: scale(2);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
     -webkit-transform-origin: center left;
             transform-origin: center left;
   }
@@ -155,8 +165,8 @@ ul {
             transform-origin: center left;
   }
   50% {
-    -webkit-transform: scale(2);
-            transform: scale(2);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
     -webkit-transform-origin: center left;
             transform-origin: center left;
   }
@@ -179,6 +189,54 @@ ul {
   to {
     -webkit-transform: rotate(1turn);
             transform: rotate(1turn);
+  }
+}
+
+@-webkit-keyframes pink-blue {
+  0% {
+    color: #e54b6b;
+  }
+  50% {
+    color: #5f91ce;
+  }
+  100% {
+    color: #e54b6b;
+  }
+}
+
+@keyframes pink-blue {
+  0% {
+    color: #e54b6b;
+  }
+  50% {
+    color: #5f91ce;
+  }
+  100% {
+    color: #e54b6b;
+  }
+}
+
+@-webkit-keyframes bg-color {
+  0% {
+    background-color: rgba(229, 75, 107, 0.3);
+  }
+  50% {
+    background-color: rgba(95, 145, 206, 0.3);
+  }
+  100% {
+    background-color: rgba(229, 75, 107, 0.3);
+  }
+}
+
+@keyframes bg-color {
+  0% {
+    background-color: rgba(229, 75, 107, 0.3);
+  }
+  50% {
+    background-color: rgba(95, 145, 206, 0.3);
+  }
+  100% {
+    background-color: rgba(229, 75, 107, 0.3);
   }
 }
 
@@ -416,8 +474,27 @@ main {
 }
 
 .trip-button {
-  width: 4rem;
-  height: 4rem;
+  width: 8rem;
+  height: 8rem;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.trip-button img {
+  width: 8rem;
+  height: 8rem;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+
+.trip-button img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.trip-button img:active {
+  outline: 2px dotted #5f91ce;
 }
 
 .bronvermelding {
@@ -581,6 +658,7 @@ main {
   -webkit-box-shadow: 0 1.5px 0 black;
           box-shadow: 0 1.5px 0 black;
   max-width: 100%;
+  background-color: transparent;
 }
 
 .history input:focus {
