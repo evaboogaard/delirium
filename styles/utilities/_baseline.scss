@@ -66,6 +66,11 @@ li {
   color: $black;
 }
 
+// h2 {
+//   position: sticky;
+//   top: 0;
+// }
+
 // FONT-SIZE
 
 h2 {
@@ -157,4 +162,8 @@ ul {
   to {
     transform: rotate(1turn);
   }
+}
+
+main {
+  cursor: url(../../img/logo-delirum.svg);
 }

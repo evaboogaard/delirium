@@ -182,6 +182,10 @@ ul {
   }
 }
 
+main {
+  cursor: url(../../img/logo-delirum.svg);
+}
+
 .background-container {
   position: fixed;
   top: 0;
@@ -416,6 +420,11 @@ main {
   height: 4rem;
 }
 
+.bronvermelding {
+  width: 80%;
+  margin: 5rem 0 2rem 0;
+}
+
 .cursor-dot,
 .cursor-dot-outline {
   position: absolute;
@@ -581,6 +590,14 @@ main {
 #kenmerken {
   width: 80%;
   margin: 5rem 0;
+}
+
+#kenmerken h2 {
+  margin-bottom: 2rem;
+}
+
+#kenmerken li {
+  margin: 2rem 0;
 }
 
 #kenmerken .letters {
