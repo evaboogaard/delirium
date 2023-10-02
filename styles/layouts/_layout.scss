@@ -46,6 +46,46 @@ main {
   }
 }
 
+.trip {
+  main {
+    @media (min-width: $md) {
+      animation: border-left 2s ease-out infinite;
+
+      &::before {
+        animation: blue-border 3s ease-in-out infinite;
+      }
+    }
+  }
+}
+
+@keyframes blue-border {
+  0% {
+    transform: translateX(1);
+  }
+
+  50% {
+    transform: translateX(0.5);
+  }
+
+  100% {
+    transform: translateX(1);
+  }
+}
+
+@keyframes border-left {
+  0% {
+    border-left: 10rem solid $pink;
+  }
+
+  50% {
+    border-left: 5rem solid $pink;
+  }
+
+  100% {
+    border-left: 10rem solid $pink;
+  }
+}
+
 .bg {
   display: flex;
   justify-content: center;
